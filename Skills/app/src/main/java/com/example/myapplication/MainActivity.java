@@ -55,11 +55,6 @@ public class MainActivity extends AppCompatActivity  implements  View.OnClickLis
     }
 
     public void ingresar(View view) {
-        case R.id.register:
-            obtenerinfo();
-            break;
-    }
-    private void obtenerinfo (){
         int numero=Integer.parseInt(campo1.getText().toString());
         String pass=campo2.getText().toString();
 
@@ -67,6 +62,6 @@ public class MainActivity extends AppCompatActivity  implements  View.OnClickLis
                 "Dato numerico: "+numero,Toast.LENGTH_SHORT).show();
         Toast.makeText(getApplicationContext(),
                 "Dato pass: "+numero,Toast.LENGTH_SHORT).show();
-
     }
+    
 }

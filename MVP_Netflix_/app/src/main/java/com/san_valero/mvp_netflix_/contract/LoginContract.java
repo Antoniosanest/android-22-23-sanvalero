@@ -1,5 +1,6 @@
 package com.san_valero.mvp_netflix_.contract;
 
+import com.san_valero.mvp_netflix_.model.pojo.Film;
 import com.san_valero.mvp_netflix_.model.pojo.User;
 
 public interface LoginContract {
@@ -9,6 +10,7 @@ public interface LoginContract {
     }
     public interface  Presenter{
         void Login(User user);
+        void lstFilms(Film film);
     }
     public interface Model{
         interface OnLoginUserListener{

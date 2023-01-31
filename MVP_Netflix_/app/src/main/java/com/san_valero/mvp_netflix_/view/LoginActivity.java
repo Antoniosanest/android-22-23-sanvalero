@@ -7,11 +7,14 @@ import android.widget.Button;
 import android.widget.EditText;
 
 import com.san_valero.mvp_netflix_.R;
+import com.san_valero.mvp_netflix_.presenter.LoginPresenter;
 
 public class LoginActivity extends AppCompatActivity {
     private EditText edtUserLogin;
     private EditText edtPassLogin;
     private Button btnLogin;
+    private LoginPresenter loginPresenter;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +30,7 @@ public class LoginActivity extends AppCompatActivity {
 
     }
     private  void initPresenter(){
-
+        loginPresenter = new LoginPresenter();
+        loginPresenter.lstFilms(null);
     }
 }

@@ -1,6 +1,6 @@
 package com.example.mvp_simpsons_01.lst_simpson;
 
-import com.example.mvp_simpsons_01.lst_simpson.model.pojo.Simpson;
+import com.example.mvp_simpsons_01.entities.pojo.Simpson;
 
 import java.util.ArrayList;
 
